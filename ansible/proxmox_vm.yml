@@ -1,0 +1,6 @@
+---
+- name: Creation two vm proxmox
+  hosts: '{{ list_hosts }}'
+  remote_user: root
+  roles:
+      - { role: proxmox_create_vm }
