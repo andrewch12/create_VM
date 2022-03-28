@@ -13,7 +13,7 @@
       loop: "{{ lookup('dict', vms) }}"
 
     - name: Set IP addresses
-      command: "qm set {{ item.value.vmid }}  --ipconfig0 ip={{ item.value.ipaddress }}"
+      command: "qm set {{ item.value.vmid }}  --ipconfig0 ip={{ item.value.ipaddress }},gw=192.168.1.254"
       loop: "{{ lookup('dict', vms) }}"
 
     - name: Copy SSH key

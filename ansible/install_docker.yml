@@ -1,0 +1,6 @@
+---
+- name: Install docker to vm
+  hosts: '{{ list_hosts }}'
+  become: true
+  roles:
+      - { role: install_docker }

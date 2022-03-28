@@ -2,7 +2,8 @@
 bidmachine-k8s-diff-apac04-old   ansible_host=188.42.126.92
 
 [vm_proxmox]
-192.168.1.11 ansible_user=andrew
+192.168.1.32 ansible_user=andrew
+192.168.1.31 ansible_user=andrew
 
 [vm_proxmox:vars]
 ansible_ssh_common_args='-o ProxyCommand="ssh -W %h:%p -q root@188.42.126.92"'
